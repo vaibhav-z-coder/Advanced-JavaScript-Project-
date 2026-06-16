@@ -1,156 +1,114 @@
-const teamMembers = [
-      {
-        name: "Vaibhav Singh",
-        role: "Frontend Developer",
-        avatar: "VS",
-        skills: ["HTML", "CSS", "JavaScript", "UI Design"],
-        github: "https://github.com/vaibhav-z-coder"
-      },
-      {
-        name: "Team Member 2",
-        role: "Quiz App Developer",
-        avatar: "T2",
-        skills: ["DOM", "State", "Events"],
-        github: "#"
-      },
-      {
-        name: "Team Member 3",
-        role: "Expense Tracker Developer",
-        avatar: "T3",
-        skills: ["CRUD", "localStorage", "Arrays"],
-        github: "#"
-      },
-      {
-        name: "Team Member 4",
-        role: "News API Developer",
-        avatar: "T4",
-        skills: ["API", "Fetch", "Async/Await"],
-        github: "#"
-      },
-      {
-        name: "Team Member 5",
-        role: "GitHub Explorer Developer",
-        avatar: "T5",
-        skills: ["REST API", "Sorting", "Rendering"],
-        github: "#"
-      },
-      {
-        name: "Team Member 6",
-        role: "Kanban Board Developer",
-        avatar: "T6",
-        skills: ["Drag & Drop", "State", "Storage"],
-        github: "#"
-      }
-    ];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Agency Portfolio</title>
+  <link rel="stylesheet" href="./portfoliostyle.css">
+</head>
+<body>
+  <div class="layout-shell">
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <div class="sidebar-logo">TA</div>
+        <h2>Team<span>Agency</span></h2>
+        <p class="sidebar-subtitle">Capstone Projects</p>
 
-    const projects = [
-      {
-        title: "Interactive Quiz App",
-        type: "State & Logic",
-        description: "A multiple-choice quiz app with running score, question state, feedback, and final percentage result.",
-        link: "../quiz/index.html"
-      },
-      {
-        title: "Expense Tracker",
-        type: "CRUD & localStorage",
-        description: "An income and expense manager with add, edit, delete, totals calculation, and persistent browser storage.",
-        link: "../expense-tracker/index.html"
-      },
-      {
-        title: "Live News Feed",
-        type: "Async API Integration",
-        description: "A news aggregator using async/await, loading states, error handling, search, and category filters.",
-        link: "../news-feed/index.html"
-      },
-      {
-        title: "GitHub Developer Explorer",
-        type: "Multi Endpoint API",
-        description: "A GitHub profile explorer that shows developer stats, repositories, sorting, and language breakdown.",
-        link: "../index.html"
-      },
-      {
-        title: "Kanban Task Board",
-        type: "Drag & Drop State",
-        description: "A Trello-style task board with create, edit, move, delete, drag and drop, and localStorage persistence.",
-        link: "../kanban-board/index.html"
-      },
-      {
-        title: "Team Agency Portfolio",
-        type: "DOM & Layout",
-        description: "A data-driven portfolio page with team cards, project showcase, theme toggle, and contact validation.",
-        link: "#home"
-      }
-    ];
+        <div class="side-menu">
+          <a href="index.html" class="active-sidebar-link">Portfolio</a>
+          <a href="../quiz/index.html">Quiz App</a>
+          <a href="../expense-tracker/index.html">Expense Tracker</a>
+          <a href="../news-feed/index.html">News Feed</a>
+          <a href="https://git-fetch-project.vercel.app/">GitHub Explorer</a>
+          <a href="../kanban-board/index.html">Kanban Board</a>
+        </div>
+      </div>
+    </aside>
 
-    const teamGrid = document.getElementById("teamGrid");
-    const projectGrid = document.getElementById("projectGrid");
-    const themeBtn = document.getElementById("themeBtn");
-    const contactForm = document.getElementById("contactForm");
-    const nameInput = document.getElementById("nameInput");
-    const emailInput = document.getElementById("emailInput");
-    const messageInput = document.getElementById("messageInput");
-    const formMessage = document.getElementById("formMessage");
+    <main class="portfolio-app">
+      <nav class="navbar">
+      <div class="logo">Team<span>Agency</span></div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#team">Team</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-btn" id="themeBtn">Toggle Theme</button>
+    </nav>
 
-    function renderTeamMembers() {
-      teamGrid.innerHTML = teamMembers.map(member => `
-        <article class="member-card">
-          <div class="avatar">${member.avatar}</div>
-          <h3>${member.name}</h3>
-          <p class="role">${member.role}</p>
-          <p>Contributed to the capstone project through clean JavaScript logic, responsive UI, and project collaboration.</p>
-          <div class="skills">
-            ${member.skills.map(skill => `<span>${skill}</span>`).join("")}
-          </div>
-          <a class="card-link" href="${member.github}" target="_blank">GitHub Profile →</a>
-        </article>
-      `).join("");
-    }
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="tag">JavaScript Capstone Team</span>
+        <h1>We Build Interactive Web Experiences</h1>
+        <p class="hero-text">A modern team agency portfolio created using pure HTML, CSS, and JavaScript. This page introduces our team, showcases our capstone projects, and connects all applications in one premium interface.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="primary-btn">View Projects</a>
+          <a href="#team" class="secondary-btn">Meet Team</a>
+        </div>
+      </div>
 
-    function renderProjects() {
-      projectGrid.innerHTML = projects.map(project => `
-        <article class="project-card">
-          <h3>${project.title}</h3>
-          <p class="project-type">${project.type}</p>
-          <p>${project.description}</p>
-          <a class="card-link" href="${project.link}">Open Project →</a>
-        </article>
-      `).join("");
-    }
+      <div class="hero-panel">
+        <div class="panel-card">
+          <strong>06</strong>
+          <span>Core JavaScript Projects</span>
+        </div>
+        <div class="panel-card">
+          <strong>100%</strong>
+          <span>HTML, CSS and JavaScript</span>
+        </div>
+        <div class="panel-card">
+          <strong>320px+</strong>
+          <span>Fully Responsive Layout</span>
+        </div>
+      </div>
+    </section>
 
-    function loadTheme() {
-      const savedTheme = localStorage.getItem("portfolioTheme");
-      if (savedTheme === "light") {
-        document.body.classList.add("light-mode");
-      }
-    }
+    <section class="section" id="team">
+      <div class="section-header">
+        <h2>Our Team</h2>
+        <p>Each member contributed to JavaScript logic, UI rendering, API handling, state management, and project integration.</p>
+      </div>
 
-    themeBtn.addEventListener("click", function() {
-      document.body.classList.toggle("light-mode");
-      const currentTheme = document.body.classList.contains("light-mode") ? "light" : "dark";
-      localStorage.setItem("portfolioTheme", currentTheme);
-    });
+      <div class="team-grid" id="teamGrid"></div>
+    </section>
 
-    contactForm.addEventListener("submit", function(event) {
-      event.preventDefault();
+    <section class="section" id="projects">
+      <div class="section-header">
+        <h2>Capstone Projects</h2>
+        <p>A complete suite of functional applications covering DOM, state, CRUD, APIs, drag and drop, and localStorage.</p>
+      </div>
 
-      const name = nameInput.value.trim();
-      const email = emailInput.value.trim();
-      const message = messageInput.value.trim();
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
 
-      if (name === "" || email === "" || message === "") {
-        formMessage.textContent = "Please fill all fields before sending.";
-        return;
-      }
+    <section class="section" id="contact">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Have feedback, questions, or want to review our project? Send us a message below.</p>
+      </div>
 
-      if (!email.includes("@") || !email.includes(".")) {
-        formMessage.textContent = "Please enter a valid email address.";
-        return;
-      }
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>This portfolio is part of our final JavaScript capstone project. We focused on clean UI, real functionality, proper state handling, and responsive design.</p>
+        </div>
 
-      formMessage.textContent = "Message sent successfully. Thank you!";
-      contactForm.reset();
-    });
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="nameInput" placeholder="Your name" />
+          <input type="email" id="emailInput" placeholder="Your email" />
+          <textarea id="messageInput" placeholder="Your message"></textarea>
+          <button type="submit">Send Message</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
 
-    loadTheme();
-    renderTeamMembers();
-    renderProjects();
+    <footer class="footer">
+      <p>Built with HTML, CSS and JavaScript by Team Agency.</p>
+    </footer>
+    </main>
+  </div>
+<script src="./portfolioscript.js"></script>
+</body>
+</html>
