@@ -21,11 +21,11 @@ const teamMembers = [
         github: "#"
       },
       {
-        name: "Team Member 4",
+        name: "Sajidul Islam",
         role: "News API Developer",
         avatar: "T4",
         skills: ["API", "Fetch", "Async/Await"],
-        github: "#"
+        github: "https://github.com/sajidul11/NewsProject"
       },
       {
         name: "Team Member 5",
