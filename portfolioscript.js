@@ -66,7 +66,7 @@ const teamMembers = [
         title: "GitHub Developer Explorer",
         type: "Multi Endpoint API",
         description: "A GitHub profile explorer that shows developer stats, repositories, sorting, and language breakdown.",
-        link: "../index.html"
+        link: "https://git-fetch-project.vercel.app/"
       },
       {
         title: "Kanban Task Board",
