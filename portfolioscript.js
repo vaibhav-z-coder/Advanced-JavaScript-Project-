@@ -25,7 +25,7 @@ const teamMembers = [
         role: "News API Developer",
         avatar: "T4",
         skills: ["API", "Fetch", "Async/Await"],
-        github: "https://github.com/sajidul11/NewsProject"
+        github: "https://github.com/sajidul11"
       },
       {
         name: "Team Member 5",
