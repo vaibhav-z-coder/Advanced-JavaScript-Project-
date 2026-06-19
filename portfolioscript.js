@@ -7,11 +7,11 @@ const teamMembers = [
         github: "https://github.com/vaibhav-z-coder"
       },
       {
-        name: "Team Member 2",
+        name: "Adarsh Kumar Rai",
         role: "Quiz App Developer",
-        avatar: "T2",
+        avatar: "AD",
         skills: ["DOM", "State", "Events"],
-        github: "#"
+        github: "https://github.com/Adarsh-Rai01"
       },
       {
         name: "Team Member 3",
