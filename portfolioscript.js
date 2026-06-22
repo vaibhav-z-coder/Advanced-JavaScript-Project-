@@ -14,11 +14,11 @@ const teamMembers = [
         github: "https://github.com/Adarsh-Rai01"
       },
       {
-        name: "Team Member 3",
-        role: "Expense Tracker Developer",
-        avatar: "T3",
-        skills: ["CRUD", "localStorage", "Arrays"],
-        github: "#"
+        name: "Arya Patel",
+        role: "Kanban Board Developer",
+        avatar: "AP",
+        skills: ["Drag & Drop", "State", "Rendering"],
+        github: "https://github.com/iron-arya"
       },
       {
         name: "Sajidul Islam",
