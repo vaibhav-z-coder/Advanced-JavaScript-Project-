@@ -53,7 +53,7 @@
       background: rgba(27, 38, 44, 0.72);
       border: 1px solid rgba(187, 225, 250, 0.24);
       backdrop-filter: blur(22px);
-      -webkit-backdrop-filter: blur(22px);
+      -webkit-backdrop-filter:  blur(22px);
       box-shadow: 0 28px 70px rgba(27, 38, 44, 0.58);
       overflow: hidden;
       animation: fadeRight 0.75s ease forwards;
