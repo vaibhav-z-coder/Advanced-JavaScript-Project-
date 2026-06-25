@@ -82,6 +82,7 @@ const teamMembers = [
       }
     ];
 
+
     const teamGrid = document.getElementById("teamGrid");
     const projectGrid = document.getElementById("projectGrid");
     const themeBtn = document.getElementById("themeBtn");
