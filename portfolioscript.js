@@ -35,11 +35,11 @@ const teamMembers = [
         github: "#"
       },
       {
-        name: "Team Member 6",
-        role: "Kanban Board Developer",
-        avatar: "T6",
-        skills: ["Drag & Drop", "State", "Storage"],
-        github: "#"
+        name: "Arjun V",
+        role: "Expense Tracker",
+        avatar: "AV",
+        skills: ["HTML", "CSS", "JavaScript"],
+        github: "https://github.com/Arjun-V-17"
       }
     ];
 
