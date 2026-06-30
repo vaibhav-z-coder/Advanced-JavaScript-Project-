@@ -41,7 +41,7 @@ const teamMembers = [
         title: "Interactive Quiz App",
         type: "State & Logic",
         description: "A multiple-choice quiz app with running score, question state, feedback, and final percentage result.",
-        link: "../quiz/index.html"
+        link: "https://quizzz-sigma.vercel.app/"
       },
       {
         title: "Expense Tracker",
