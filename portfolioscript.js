@@ -38,7 +38,7 @@ const teamMembers = [
         name: "Arjun V",
         role: "Expense Tracker",
         avatar: "AV",
-        skills: ["HTML", "CSS", "JavaScript"],
+        skills: ["HTML", "CSS", "JavaScript", "UI Design"],
         github: "https://github.com/Arjun-V-17"
       }
     ];
