@@ -22,7 +22,7 @@ const teamMembers = [
       },
       {
         name: "Sajidul Islam",
-        role: "Frontend & News API Developer",
+        role: "News API Developer",
         avatar: "AS",
         skills: ["HTML", "CSS", "JavaScript", "UI Design"],
         github: "https://github.com/sajidul11"
