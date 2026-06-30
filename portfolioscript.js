@@ -1,7 +1,7 @@
 const teamMembers = [
       {
         name: "Vaibhav Singh",
-        role: "Frontend Developer",
+        role: "Git hub developer",
         avatar: "VS",
         skills: ["HTML", "CSS", "JavaScript", "UI Design"],
         github: "https://github.com/vaibhav-z-coder"
@@ -26,13 +26,6 @@ const teamMembers = [
         avatar: "AS",
         skills: ["HTML", "CSS", "JavaScript", "UI Design"],
         github: "https://github.com/sajidul11"
-      },
-      {
-        name: "Team Member 5",
-        role: "GitHub Explorer Developer",
-        avatar: "T5",
-        skills: ["REST API", "Sorting", "Rendering"],
-        github: "#"
       },
       {
         name: "Arjun V",
